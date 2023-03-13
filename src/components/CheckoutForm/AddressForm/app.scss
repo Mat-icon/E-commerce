@@ -1,0 +1,28 @@
+.address-title{
+    font-size: 7px;
+    color: orange;
+    font-family: 'Raleway';
+}
+
+.check-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+    .check-back{
+        padding: 9px 30px;
+        font-size: 12px;
+        background: none;
+        color: orange;
+        border: 1px solid orange;
+        font-family: 'Raleway';
+        font-weight: 700;
+
+        &:hover{
+            transition: 0.2s ease-in;
+            background: orange;
+            color: white;
+        }
+    }
+}

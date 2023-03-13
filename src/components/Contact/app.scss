@@ -1,0 +1,75 @@
+.contact{
+    width: 100%;
+    height: 600px;
+    background: #31302f;
+    position: relative;
+    top: 100%;
+    .flex-contact{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 10%;
+        top: 2%;
+
+        h1{
+            font-family: 'Raleway';
+            color: orange;
+            border-left: 3px solid rgb(0, 217, 255);
+            padding-left: 13px;
+        }
+        input{
+            width: 70%;
+            font-family: 'Raleway';
+            height: 30px;
+            color: white;
+            font-size: 15px;
+            border-radius: 15px;
+            padding: 12px 20px;
+            background: none;
+            margin-top: 15px;
+            border: 1px solid orange;
+
+            &:focus{
+                border: 1px solid skyblue;
+                outline: none;
+            }
+        }
+        textarea{
+            margin-top: 15px;
+            width: 100%;
+            background: none;
+            border-radius: 15px;
+            border: 1px solid orange;
+            height: 150px;
+            padding: 12px 20px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Raleway';
+
+            &:focus{
+                border: 1px solid skyblue;
+                outline: none;
+            }
+        }
+        button{
+            padding: 12px;
+            width: 30%;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 15px;
+            outline: none;
+            background: linear-gradient(140deg,orange,black);
+            border: none;
+            font-family: 'Raleway';
+            color: white;
+
+            &:hover{
+                border: 1px solid skyblue;
+                background: none;
+                scale: 1.03;
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}

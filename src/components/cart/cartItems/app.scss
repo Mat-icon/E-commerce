@@ -1,0 +1,44 @@
+
+.cardqq{
+    position: relative;
+    z-index: 9999;
+    width: 350px;
+    height: 315px;
+    border: 0.3px solid #ff8c19;
+    margin-top: 20px;
+
+    .name{
+        font-size: 15px;
+        color: orange;
+        font-family: 'Raleway';
+    }
+    .price{
+        font-size: 18px;
+        color: skyblue;
+        font-family: 'Raleway';
+        padding: 4px 4px;
+    }
+    .remove-btn{
+      padding: 7px 15px;
+      color: white;
+      font-size: 11px;
+      border-radius: 13px;
+      font-family: 'Raleway';
+      background: orange;
+
+      &:hover{
+        background: skyblue;
+        border: none;
+      }
+    }
+    .btn{
+        width: 10px;
+        height: 20px;
+        color: white;
+        font-size: 13px;
+        border: 1px solid skyblue;
+        border-radius: 13px;
+        font-family: 'Raleway';
+        background: none;
+    }
+}

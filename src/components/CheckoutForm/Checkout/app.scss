@@ -1,0 +1,34 @@
+.toolbar{
+    overflow: hidden;
+    background: #31302f;
+    width: 100%;
+    height: 649px;
+
+    .layout{
+        font-family: 'Raleway';
+    }
+
+    .paper{
+        width: 30%;
+        height: 500px;
+        margin: 100px auto;
+        background: white;
+        color: orange;
+        font-family: 'Raleway';
+        font-size: 20px;
+        padding: 20px 40px;
+        box-shadow: 2px 2px 8px orange;
+        border-radius: 32px;
+    }
+
+    .step{
+        color: orange;
+        background: white;
+    }
+    .checkout-title{
+        font-size: 30px;
+        font-family: 'Raleway';
+        font-weight: 800;
+    }
+}
+

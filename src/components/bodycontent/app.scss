@@ -1,0 +1,58 @@
+.content{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+
+    
+    
+    h1{
+        font-size: 50px;
+        color: white;
+        font-family: 'Raleway';
+        font-weight: 800;
+        
+        span{
+            font-size: 30px;
+            font-weight: 300;
+            font-family: 'Raleway';
+        }
+    }
+    p{
+        color: white;
+        font-size: 11px;
+        line-height: 18px;
+        font-family: 'Raleway';
+    }
+    button{
+        padding: 15px 60px;
+        color: white;
+        font-family: 'Raleway';
+        font-size: 12px;
+        cursor: pointer;
+        border: 1px solid skyblue;
+        margin-top: 8px;
+        background: none;
+        border-radius: 12px;
+        letter-spacing: 1px;
+
+
+        &:hover{
+            background: linear-gradient(90deg,orange,rgba(12, 155, 221, 0.5));
+            border: 1px solid rgb(20, 20, 19);
+        }
+        
+    }
+}
+.mini{
+         position: absolute;
+         top: 13%;
+         left: 10%;
+         word-spacing: 450px;
+         font-family: 'Pacifico';
+        p{
+          color: rgba(135, 207, 235, 0.5);
+          font-size: 15px;
+        }
+        
+    }

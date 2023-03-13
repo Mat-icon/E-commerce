@@ -1,0 +1,41 @@
+.body{
+    width: 100%;
+    height: 120vh;
+    background-image: url('../../assests/iCyou_nike_shoes_brand_new_out_of_box_Celebration_Background_ul_12fe3f66-9878-4ace-889f-0e605c614bcf.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+      
+}  
+.section-one{
+  width: 100%;
+  min-height: 900px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0);
+  background: inherit;
+  position: absolute;
+  top: 10%;
+  background: linear-gradient(120deg,rgb(58, 50, 50),rgb(58, 50, 50));
+  
+  &::before{
+   position: absolute;
+   content: "";
+   background: inherit;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   box-shadow: inset 0 0 2000px rgba(54, 32, 32, 0.555);
+   
+  }
+}
+
+
+  .section-two{
+      width: 100%;
+      height: 600px;
+      background: linear-gradient(#5e5c59,rgb(0, 238, 255));
+      overflow: hidden;
+      position: relative;
+      top: 100%;
+     }

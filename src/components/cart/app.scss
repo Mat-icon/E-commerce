@@ -1,0 +1,86 @@
+  .container-sec{
+    width: 100%;
+    background: linear-gradient(120deg,rgb(58, 50, 50),rgb(58, 50, 50));
+    position: absolute;
+    min-height: 130vh;
+    z-index: -1;
+
+   .sec{
+    width: 100%;
+   }
+
+   .grid3{
+    width: 90%;
+    height: auto;
+    margin: 150px auto;
+  }
+
+    .cart-title{
+        font-size: 30px;
+        font-family: 'Raleway';
+        color: orange;
+        font-weight:400;
+        position: relative;
+        top: 120px;
+        left: 70px;
+        border-left: 2px solid orange;
+        padding-left: 10px;
+    }
+    .emptybutton{
+        min-width : 150px;
+        background: orange;
+        border-radius: 20px;
+        color: white;
+        padding: 15px 40px;
+        font-size: 15px;
+        font-family: 'Raleway';
+        border: none;
+        cursor: pointer;
+        letter-spacing: 2px;
+    
+        &:focus{
+            color: white;
+            background: skyblue;
+        }
+    
+    }
+    
+    .checkout{
+        min-width : 150px;
+        background: orange;
+        border-radius: 20px;
+        color: white;
+        padding: 15px 40px;
+        font-size: 15px;
+        font-family: 'Raleway';
+        border: none;
+        cursor: pointer;
+        letter-spacing: 2px;
+        margin-left: 12px;
+    
+        &:focus{
+            color: white;
+            background: skyblue;
+        }
+    
+    
+    }
+    
+    
+    .subtotal{
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: 30px;
+        color: orange;
+      }
+
+      .cart-empty{
+        font-size: 30px;
+        font-weight: 300;
+        font-family: 'Raleway';
+        color: white;
+       
+      }
+    
+  }
+

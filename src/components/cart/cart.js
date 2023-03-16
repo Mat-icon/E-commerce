@@ -6,7 +6,6 @@ import Cartitem from './cartItems/Cartitem';
 import useStyles from './styles'
 
 function Cart({cart, handleRemoveFromCart,handleEmptyCart,handleAddToCartQty}) {
-  console.log("cart", " ", cart);
   const classes = useStyles();
   
   const EmptyCart = ()=>{
@@ -22,7 +21,7 @@ function Cart({cart, handleRemoveFromCart,handleEmptyCart,handleAddToCartQty}) {
       <>
         <Grid container  className='grid3' overlap='rectangular'>
           {cart.line_items.map((item)=> (
-            <Grid key={item.id}spacing={4} sm={4} xs={12}>
+            <Grid key={item.id} spacing={4} sm={4} xs={12}>
               <Cartitem item = {item} onRemoveFromCart={handleRemoveFromCart} onAddToCartQty={handleAddToCartQty} />
             </Grid>
           ))}
@@ -38,7 +37,7 @@ function Cart({cart, handleRemoveFromCart,handleEmptyCart,handleAddToCartQty}) {
     )
   }
 
-  if(!cart.line_items) return 'Loading...'
+  if(!cart || !cart.line_items) return 'Loading...'
   return (
     <div className='container-sec' >
       <div className='sec'>

@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './app.scss'
 import Logo from '../../assests/logo.png'
-function footer() {
+function Footer() {
+    const [subscribe, setSubscribe] = useState({
+        email : ''
+    })
+
+    function handleClick(event){
+        setSubscribe(prevSubscribe => {
+            const {name, value} = event.target
+             return{
+                ...prevSubscribe,
+                [name] : value
+            }
+        })
+    }
+    function handleSubmit(event){
+        event.preventDefault();
+        console.log(subscribe)
+   
+    }
   return (
     <div className='footer'>
      <div className='sub-footer'>
@@ -9,8 +27,10 @@ function footer() {
             <img alt='flexfyre' src={Logo} />
             <div className='subscribe'>
                 <h1>Subscribe to our Newsletter</h1>
-                <input placeholder='Enter Email Address' type='text' required/>
+                <form onSubmit={handleSubmit}>
+                <input placeholder='Enter Email Address' type='text' required name='email' value={subscribe.email} onChange={handleClick}/>
                 <button>Subscribe</button>
+                </form>
             </div>
         </div>
      </div>
@@ -42,4 +62,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

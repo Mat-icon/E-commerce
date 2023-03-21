@@ -28,7 +28,7 @@ function Footer() {
             <div className='subscribe'>
                 <h1>Subscribe to our Newsletter</h1>
                 <form onSubmit={handleSubmit}>
-                <input placeholder='Enter Email Address' type='text' required name='email' value={subscribe.email} onChange={handleClick}/>
+                <input placeholder='Enter Email Address' type='email' required name='email' value={subscribe.email} onChange={handleClick}/>
                 <button>Subscribe</button>
                 </form>
             </div>

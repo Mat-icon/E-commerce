@@ -77,14 +77,17 @@
         width: 50%;
         height:560px;
         padding-bottom: 6px;
-        background: rgb(201, 200, 200);
+      
         position: relative;
         bottom:189%;
         right: 10%;
         z-index: 1;
         box-shadow: 2px 2px 13px #F55F3E;
         rotate: 204deg;
-        
+        animation-name: promo;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        transition: fade-in;
     }
 
 
@@ -103,5 +106,20 @@
     }
 
 
-    
+  
+}
+
+@keyframes promo {
+    0%{
+        background: rgb(201, 200, 200);
+        transition: fade-in;
+    }
+    33%{
+        background: linear-gradient(to bottom,orange,transparent);
+        transition: fade-out;
+    }
+    66%{
+        background: linear-gradient(to bottom,transparent,skyblue);
+        transition: fade-out;
+    }
 }
